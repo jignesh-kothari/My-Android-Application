@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.CreateNewAdmin">
+
+    <RelativeLayout
+        android:id="@+id/r9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/close_addnewadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="11dp"
+            android:layout_toEndOf="@+id/close_cart"
+            android:layout_toRightOf="@+id/close_addnewadmin"
+            android:text="Add Admin"
+            android:textColor="@color/button_text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/register_applogo_admin"
+        android:layout_width="287dp"
+        android:layout_height="139dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/aad_admin" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/car1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_applogo_admin"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_username_input_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:hint="Admin Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/car2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/car1"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_phone_number_input_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:hint="Phone Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/car3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/car2"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_password_input_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/register_btn_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car3"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        app:nb_backgroundColor="@color/purple_500"
+        app:nb_borderColor="@color/button_border_color"
+        app:nb_borderWidth="2dp"
+        app:nb_fontIcon="&#xf007;"
+        app:nb_focusColor="@color/purple_700"
+        app:nb_radius="20dp"
+        app:nb_text="Create Admin"
+        app:nb_textColor="@color/button_text_color" />
+
+
+</RelativeLayout>

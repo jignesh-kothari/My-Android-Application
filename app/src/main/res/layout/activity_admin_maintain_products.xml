@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+    tools:context=".Admin.AdminMaintainProductsActivity">
+    <RelativeLayout
+        android:id="@+id/rl11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/close_updateprtoduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Update Product"
+            android:textColor="@color/button_text_color"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/product_image_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/product_name"
+                android:scaleType="centerCrop" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_name_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_image_maintain"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:hint="Product Name"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_price_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name_maintain"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:hint="Product Price"
+                android:imeOptions="actionNext"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_description_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_price_maintain"
+                android:layout_margin="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:hint="Product Description"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/apply_changes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_description_maintain"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:nb_backgroundColor="@color/purple_500"
+                app:nb_borderColor="@color/button_border_color"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="@color/button_col"
+                app:nb_radius="10dp"
+                app:nb_text="Apply changes"
+                app:nb_textAllCaps="true"
+                app:nb_textStyle="bold"
+                app:nb_textSize="20dp"
+                app:nb_textColor="@color/button_text_color" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/delete_product_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apply_changes_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:nb_fontIcon="&#xf014;"
+                app:nb_backgroundColor="#ED7878"
+                app:nb_borderColor="@color/button_border_color"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="@color/button_col"
+                app:nb_radius="10dp"
+                app:nb_text="Delete This Product"
+                app:nb_textAllCaps="true"
+                app:nb_textStyle="bold"
+                app:nb_textSize="20dp"
+                app:nb_textColor="@color/button_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

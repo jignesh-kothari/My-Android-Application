@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AtoZ Mart</string>
+    <string name="navigation_drawer_open">Open navigation drawer\"</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--    otp-->
+    <string name="otp_code_text">Code</string>
+    <string name="otp_verification_text">Varification</string>
+    <string name="otp_description_text">Enter One Time Password Sent on\n+92333</string>
+    <string name="verify_code">Verify Code</string>
+
+    <!--    register login-->
+    <string name="hint_username">Name</string>
+    <string name="hint_password">Password</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="button_send">Send</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_signin_message">Hello, sign in to your account</string>
+    <string name="text_signin_social_media">Or Sign in using social media</string>
+    <string name="text_signup_social_media">Or Sign up using social media</string>
+    <string name="text_signup_terms">By signing up, you agree to our <b>terms and conditions</b></string>
+    <string name="text_signup_message">Hello, let\'s set up your account</string>
+
+    <string name="text_forgot_password_title">Forgot password? No worries</string>
+    <string name="text_forgot_password_message">Give answer of below two security questions.</string>
+
+    <string name="hint_phone">Phone</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="answer_the_following_security_questions">Answer the Following Security Questions.</string>
+    <string name="don_t_have_an_account">Don\'t have an account? <b>Sign up</b></string>
+    <string name="design">Designed and Developed By : <b>Mr. Jignesh Kothari</b></string>
+    <string name="fastest_string">Indias Fastest grawing shopping Mart : <b><i>AtoZMart</i></b></string>
+
+</resources>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.ConformFinalOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/close_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="55dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Final Order"
+            android:textColor="@color/button_text_color"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_marginTop="52dp"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/orders_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/clip_online_shopping" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/orders_logo"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="Please Fill Shipment Details "
+        android:textColor="@color/button_text_color"
+        android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cc11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_username"
+                android:imeOptions="actionNext"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cc22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cc11"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipment_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:inputType="number"
+                android:hint="@string/hint_phone"
+                android:imeOptions="actionNext"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cc33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/cc22"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipment_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="12dp"
+                android:inputType="textMultiLine"
+                android:hint="Address"
+                android:imeOptions="actionDone"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cc44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/cc33"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shipment_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/button_text_color"
+                android:textColorHint="@color/button_text_color"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="12dp"
+                android:inputType="text"
+                android:hint="City Name"
+                android:imeOptions="actionDone"
+                android:minWidth="320dp"
+                android:minHeight="45dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/confirm_final_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cc44"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:nb_backgroundColor="@color/purple_500"
+        app:nb_borderColor="@color/button_border_color"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="@color/purple_700"
+        app:nb_fontIcon="&#xf1d9;"
+        app:nb_radius="20dp"
+        app:nb_textAllCaps="true"
+        app:nb_textStyle="bold"
+        app:nb_textSize="20dp"
+        app:nb_text="Place Order"
+        app:nb_textColor="@color/button_text_color" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
